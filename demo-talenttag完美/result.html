@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Results - TalenTag</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+            opacity: 0;
+        }
+        .job-card:hover {
+            transform: translateY(-4px);
+            transition: all 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white py-4 shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center">
+                <a href="index.html" class="flex items-center">
+                    <img src="logo.svg" alt="TalenTag" class="h-8">
+                    <span class="text-2xl font-bold text-[#32ADE6] ml-2">TalenTag</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Result Header -->
+        <div class="text-center mb-12 fade-in" style="animation-delay: 0.2s">
+            <h1 class="text-3xl font-bold mb-4">🎉 Your Resume Has Been Analyzed!</h1>
+            <p class="text-gray-600 text-lg">Based on your skills and profile, you are matched as a:</p>
+        </div>
+
+        <!-- Profile Card -->
+        <div class="max-w-2xl mx-auto mb-16 fade-in" style="animation-delay: 0.4s">
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <div class="flex items-start space-x-6">
+                    <div class="w-24 h-24 bg-gray-200 rounded-full flex-shrink-0"></div>
+                    <div class="flex-1">
+                        <h2 class="text-2xl font-semibold mb-4">Emma Chen</h2>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-4 py-2 bg-blue-100 text-blue-600 rounded-full">Creative Thinker</span>
+                            <span class="px-4 py-2 bg-purple-100 text-purple-600 rounded-full">UI/UX Design</span>
+                            <span class="px-4 py-2 bg-green-100 text-green-600 rounded-full">Figma</span>
+                            <span class="px-4 py-2 bg-yellow-100 text-yellow-600 rounded-full">Content Creation</span>
+                        </div>
+                        <p class="text-gray-600">Your profile shows strong creative abilities and technical skills in design tools. You're well-suited for roles in UI/UX design and creative content development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Job Recommendations -->
+        <div class="mb-16 fade-in" style="animation-delay: 0.6s">
+            <h2 class="text-2xl font-bold mb-8 text-center">Recommended Internships for You</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- Job Card 1 -->
+                <div class="job-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="font-semibold text-lg">UI/UX Design Intern</h3>
+                            <p class="text-gray-600">Google</p>
+                        </div>
+                        <span class="bg-green-100 text-green-600 px-2 py-1 rounded text-sm">Remote</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Help design beautiful, intuitive interfaces for Google's next generation of products.</p>
+                    <a href="#" class="inline-block bg-[#32ADE6] text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">View Details</a>
+                </div>
+
+                <!-- Job Card 2 -->
+                <div class="job-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="font-semibold text-lg">Product Design Intern</h3>
+                            <p class="text-gray-600">Figma</p>
+                        </div>
+                        <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded text-sm">San Francisco</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Join Figma's design team and help shape the future of collaborative design tools.</p>
+                    <a href="#" class="inline-block bg-[#32ADE6] text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">View Details</a>
+                </div>
+
+                <!-- Job Card 3 -->
+                <div class="job-card bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="font-semibold text-lg">Creative Design Intern</h3>
+                            <p class="text-gray-600">Adobe</p>
+                        </div>
+                        <span class="bg-purple-100 text-purple-600 px-2 py-1 rounded text-sm">Hybrid</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Create engaging visual content and help drive Adobe's creative initiatives.</p>
+                    <a href="#" class="inline-block bg-[#32ADE6] text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beta Program CTA -->
+        <div class="max-w-2xl mx-auto text-center p-8 bg-white rounded-2xl shadow-lg fade-in" style="animation-delay: 0.8s">
+            <h2 class="text-2xl font-bold mb-4">Join Beta Program</h2>
+            <p class="text-gray-600 mb-6">Receive weekly AI matching emails with the latest internship opportunities</p>
+            <form class="flex gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                <button type="submit" class="bg-[#32ADE6] text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+                    Join Beta
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        // Trigger confetti animation on load
+        window.onload = () => {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+        };
+    </script>
+</body>
+</html> 

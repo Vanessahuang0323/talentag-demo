@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalenTag - AI-Powered Internship Matching</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .feature-card:hover {
+            transform: scale(1.03);
+            transition: all 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white py-4 fixed w-full top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="logo.svg" alt="TalenTag" class="h-8">
+                    <span class="text-2xl font-bold text-[#32ADE6] ml-2">TalenTag</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Home</a>
+                    <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900">FAQ</a>
+                    <a href="#" class="text-[#32ADE6] font-semibold hover:text-blue-700">Join Beta</a>
+                </div>
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
+                    <h1 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                        Unleash your creative potential with AI
+                    </h1>
+                    <p class="text-gray-600 text-lg mb-8 max-w-xl">
+                        TalenTag helps students in design, marketing, and media get matched with the right internship
+                    </p>
+                    <a href="loading.html" class="inline-block bg-[#32ADE6] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-600 transition-colors shadow-lg hover:shadow-xl">
+                        Analyze My Resume
+                    </a>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="bg-white rounded-2xl shadow-xl p-6 max-w-md mx-auto" style="animation: float 6s ease-in-out infinite">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-16 h-16 bg-gray-200 rounded-full flex-shrink-0"></div>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-lg">Sarah Chen</h3>
+                                <div class="flex flex-wrap gap-2 mt-3">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Creative Type</span>
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">UI/UX Design</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">Figma Expert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">How TalenTag Works</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-[#32ADE6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Resume Analysis</h3>
+                    <p class="text-gray-600">Our AI analyzes your resume to identify key skills and creative potential</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-[#32ADE6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Smart Matching</h3>
+                    <p class="text-gray-600">Get matched with internships that align with your creative skills and interests</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-[#32ADE6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Weekly Updates</h3>
+                    <p class="text-gray-600">Receive personalized internship recommendations every week via email</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-2">How does TalenTag work?</h3>
+                    <p class="text-gray-600">Our AI analyzes your resume, identifies your key skills and potential, then matches you with relevant internship opportunities in creative fields.</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-2">Is it free for students?</h3>
+                    <p class="text-gray-600">Yes! TalenTag is completely free for students during our beta phase. Join now to get early access to all features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            <p>© 2024 TalenTag. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
